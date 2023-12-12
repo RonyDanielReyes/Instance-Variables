@@ -1,13 +1,10 @@
 class Person
-## the attr_reader creates the getter method for name in just 1 line so it can be accesible
-  attr_reader :name
+ ## Defines both getter and setter methods for name
+  attr_accessor :name
 
   def initialize(name)
     @name = name
   end
-
-## changing the setter directly refactoring it
-  attr_writer :name
 end
 
 p = Person.new('L. Ron')
